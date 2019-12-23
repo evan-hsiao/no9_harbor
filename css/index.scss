@@ -22,5 +22,18 @@
         background-color: gray;
       }
     }
+    .container {
+      .row.mid_menu {
+        .col-lg-4 {
+          .float-left {
+            .icon_img {
+              width: 30px;
+              height: 50px;
+              background-color: yellow;
+            }
+          }
+        }
+      }
+    }
   }
 }
