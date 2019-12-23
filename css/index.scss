@@ -1,0 +1,26 @@
+@import "./index_tran";
+
+* {
+  margin: 0;
+  padding: 0;
+
+  body {
+    margin: 0 auto;
+
+    .nav-logo-img {
+      width: 50px;
+      height: 50px;
+      background-image: url("../Img/harbor\ number\ 9\ logo\ img.png");
+      background-position: center;
+      background-size: cover;
+    }
+    .banner {
+      .banner_image {
+        width: 100%;
+        height: 50vh;
+        // background-image: url();
+        background-color: gray;
+      }
+    }
+  }
+}
