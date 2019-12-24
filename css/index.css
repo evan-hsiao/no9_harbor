@@ -21,9 +21,26 @@
   background-color: gray;
 }
 
-* body .container .row.mid_menu .col-lg-4 .float-left .icon_img {
+* body .mid_menu_all {
+  margin: 0 auto;
+  padding: 0;
+}
+
+* body .mid_menu_all .mid_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* body .mid_menu_all .mid_menu .menu_icont {
   width: 30px;
-  height: 50px;
-  background-color: yellow;
+  height: 30px;
+  background-color: 0;
 }
 /*# sourceMappingURL=index.css.map */

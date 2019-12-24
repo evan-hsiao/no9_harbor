@@ -1,4 +1,4 @@
-@import "./index_tran";
+@import "./index_ tran";
 
 * {
   margin: 0;
@@ -22,14 +22,24 @@
         background-color: gray;
       }
     }
-    .container {
-      .row.mid_menu {
-        .col-lg-4 {
-          .float-left {
-            .icon_img {
+    .menu_list {
+      margin: 0 auto;
+      padding: 0;
+
+      .mid_menu_all {
+        
+        span {
+          font-size: 50px;
+
+          .mid_menu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .menu_icon {
               width: 30px;
-              height: 50px;
-              background-color: yellow;
+              height: 30px;
+              background-color: red($color: #000000);
             }
           }
         }
