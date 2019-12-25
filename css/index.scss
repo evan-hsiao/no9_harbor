@@ -1,54 +1,101 @@
-@import "./index_ tran";
+@import "../css/index_tran";
 
 * {
   margin: 0;
   padding: 0;
+}
+body {
+  position: relative;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 
-  body {
-    margin: 0 ;
+.nav-fixed {
+  position: fixed;
+  width: 100%;
+  color: white;
+  z-index: 999;
 
-    .nav-float {
-      position: fixed;
-      top: 0;
+  .nav-logo-img {
+    width: 50px;
+    height: 50px;
+    background-image: url("../Img/harbor\ number\ 9\ logo\ img.png");
+    background-position: center;
+    background-size: cover;
+  }
+}
 
-      .nav-logo-img {
-        width: 50px;
-        height: 50px;
-        background-image: url("../Img/harbor\ number\ 9\ logo\ img.png");
-        background-position: center;
-        background-size: cover;
-      }
-    }
-    
-    .banner {
-      .banner_image {
-        width: 100%;
-        height: 50vh;
-        // background-image: url();
-        background-color: gray;
-      }
-    }
-    .menu_list {
-      margin: 0 auto;
-      padding: 0;
+.banner {
+  .banner_image {
+    width: 100%;
+    height: 500px;
+    // background-image: url();
+    // background-size: cover;
+    background-color: gray;
+  }
+}
 
-      .mid_menu_all {
-        span {
-          font-size: 50px;
-
-          .mid_menu {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            .menu_icon {
-              width: 30px;
-              height: 30px;
-              background-color: red($color: #000000);
+#menu_list {
+  margin: 20px 0;
+  
+  .mid_menu_all {
+    .mid_menu {
+      .menu_flex {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        padding: 0;
+        .menu_text {
+          .menu_link {
+            h3 {
             }
+          }
+        }
+
+        .menu_icon {
+          width: 150px;
+          height: 150px;
+          background-color: gray;
+          border-radius: 50%;
+          margin: 10px;
+
+          @media (max-width: 470px ) {
+            width: 80px;
+          height: 80px;
+            
           }
         }
       }
     }
   }
 }
+
+// ad廣告輪播
+.swiper-container {
+  width: 100%;
+  height: 200px;
+  background-color: gray;
+  margin-left: auto;
+  margin-right: auto;
+  .swiper-wrapper {
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: green;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+.store_all{
+  margin: 20px 0; 
+  display: flex;
+  justify-content: center;
+  
+}
+
+
+
