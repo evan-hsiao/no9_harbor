@@ -38,9 +38,9 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
                 <a class="nav-item nav-link active" href="#" tabindex="-1" aria-disabled="true">首頁<span
-                        class="sr-only">(current)</span></a>
+                        class="sr-only"></span></a>
                 <a class="nav-item nav-link" href="#menu_list" tabindex="-1" aria-disabled="true">我們的菜單</a>
-                <a class="nav-item nav-link" href="#" tabindex="-1" aria-disabled="true">分店資訊</a>
+                <a class="nav-item nav-link" href="#store_list" tabindex="-1" aria-disabled="true">分店資訊</a>
                 <a class="nav-item nav-link" href="#" tabindex="-1" aria-disabled="true">關於我們</a>
             </div>
         </div>
@@ -201,7 +201,17 @@
                                 of
                                 the card's content.</p>
                         </div>
-                    </div>
+                    </div>                    
+                </div>
+                <div class="col-4 store_page">
+                    <div class="card" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                        </div>
+                    </div>                    
                 </div>
             </div>
         </div>
@@ -221,8 +231,9 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
 
-    <!-- slide_ad廣告 -->
+
     <script>
+        //  < !--slide_ad廣告 -->
         var swiper = new Swiper('.swiper-container', {
             slidesPerView: 1,
             spaceBetween: 30,
@@ -235,6 +246,14 @@
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
+        });
+
+        $(function () {
+            var navMain = $(".navbar-collapse");
+            // 按鍵事件 點選後自動縮放選單
+            navMain.on("click", "a:not([data-toggle])", null, function () {
+                navMain.collapse('hide');
+            });
         });
 
     </script>
