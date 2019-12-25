@@ -36,9 +36,10 @@ body {
   }
 }
 
+// 我們的菜單
 #menu_list {
   margin: 20px 0;
-  
+
   .mid_menu_all {
     .mid_menu {
       .menu_flex {
@@ -47,13 +48,7 @@ body {
         flex-direction: row;
         align-items: center;
         padding: 0;
-        .menu_text {
-          .menu_link {
-            h3 {
-            }
-          }
-        }
-
+        
         .menu_icon {
           width: 150px;
           height: 150px;
@@ -61,10 +56,9 @@ body {
           border-radius: 50%;
           margin: 10px;
 
-          @media (max-width: 470px ) {
+          @media (max-width: 470px) {
             width: 80px;
-          height: 80px;
-            
+            height: 80px;
           }
         }
       }
@@ -75,27 +69,27 @@ body {
 // ad廣告輪播
 .swiper-container {
   width: 100%;
-  height: 200px;
-  background-color: gray;
-  margin-left: auto;
-  margin-right: auto;
-  .swiper-wrapper {
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: green;
+  height: 100%;
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+// 店家資訊
+#store_list {
+  .store_all {
+    .store_info {
+      padding: 0;
       display: flex;
       justify-content: center;
       align-items: center;
+      .store_page {
+        .card {
+          margin: 30px;
+        }
+      }
     }
   }
 }
-.store_all{
-  margin: 20px 0; 
-  display: flex;
-  justify-content: center;
-  
-}
-
-
-

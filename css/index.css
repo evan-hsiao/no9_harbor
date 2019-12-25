@@ -69,16 +69,16 @@ body {
 
 .swiper-container {
   width: 100%;
-  height: 200px;
-  background-color: gray;
-  margin-left: auto;
-  margin-right: auto;
+  height: 100%;
 }
 
-.swiper-container .swiper-wrapper .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: green;
+.swiper-container .swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+#store_list .store_all .store_info {
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -90,13 +90,7 @@ body {
           align-items: center;
 }
 
-.store_all {
-  margin: 20px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+#store_list .store_all .store_info .store_page .card {
+  margin: 30px;
 }
 /*# sourceMappingURL=index.css.map */
