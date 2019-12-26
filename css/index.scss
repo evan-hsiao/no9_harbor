@@ -25,78 +25,129 @@ body {
     background-size: cover;
   }
 }
+.all {
+  padding-top: 66px;
 
-.banner {
-  .banner_image {
-    width: 100%;
-    height: 500px;
-    // background-image: url();
-    // background-size: cover;
-    background-color: gray;
-    @media (max-width: 470px) {
-      height: 100vh;
-    }
-  }
-}
-
-// 我們的菜單
-#menu_list {
-  margin: 20px 0;
-
-  .mid_menu_all {
-    .mid_menu {
-      .menu_flex {
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-        align-items: center;
-        padding: 0;
-
-        .menu_icon {
-          width: 150px;
-          height: 150px;
-          background-color: gray;
-          border-radius: 50%;
-          margin: 10px;
-
-          @media (max-width: 470px) {
-            width: 80px;
-            height: 80px;
-          }
-        }
+  .banner {
+    .banner_image {
+      width: 100%;
+      height: 500px;
+      background-image: url("../Img/number9-bannerimg.jpg");
+      background-size: cover;
+      background-position: center;
+      // background-color: gray;
+      @media (max-width: 470px) {
+        height: 100vh;
       }
     }
   }
-}
 
-//slide_ad 廣告輪播
-.swiper-container {
-  width: 100%;
-  height:200px;
-  .swiper-slide {
-    background-position: center;
-    background-size: cover;
-  }
-}
+  // 我們的菜單
+  #menu_list {
+    margin: 20px 0;
 
-// 店家資訊
-#store_list {
-  .store_all {
-    .store_info {
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      .store_page {
-        .card {
-          margin: 10px auto;
-          .card-body {
-            h5 {
-              
+    .mid_menu_all {
+      .mid_menu {
+        .menu_flex {
+          display: flex;
+          justify-content: center;
+          flex-direction: row;
+          align-items: center;
+          padding: 0;
+
+          .menu_icon {
+            width: 150px;
+            height: 150px;
+            background-color: gray;
+            border-radius: 50%;
+            margin: 10px;
+
+            @media (max-width: 470px) {
+              width: 80px;
+              height: 80px;
             }
           }
         }
       }
+    }
+  }
+
+  //slide_ad 廣告輪播
+  .swiper-container {
+    width: 100%;
+    height: 200px;
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      // background-repeat: no-repeat;
+    }
+  }
+
+  // 店家資訊
+  #store_list {
+    .store_all {
+      .store_info {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .store_page {
+          .card {
+            margin: 10px auto;
+          }
+        }
+      }
+    }
+  }
+
+  // 關於我們
+
+  // 結尾資訊
+  #footer_end {
+    width: 100%;
+    height: 300px;
+    background-color: black;
+
+    @media (max-width: 470px) {
+      height: 500px;
+    }
+    .footer_all {
+      .footer_info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0 0 0;
+
+        .footer_link {
+          i {
+            color: ivory;
+          }
+        }
+      }
+    }
+    .info_total {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      margin: 0 auto;
+
+      .info_area1 {
+        width: 200px;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+        list-style-type: none;
+        color: white;
+      }
+      .info_area2 {
+        width: 200px;
+        height: 200px;
+        background-color: goldenrod;
+      }
+    }
+    .footer_copyright {
+      justify-content: center;
+      align-items: center;
     }
   }
 }
