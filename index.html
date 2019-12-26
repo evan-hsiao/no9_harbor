@@ -173,11 +173,12 @@
     <!-- slide_ad廣告 -->
     <div class="swiper-container">
         <div class="swiper-wrapper">
-            <div class="swiper-slide" style="background-image:url(./Img/number9-store.jpg)"></div>
-            <div class="swiper-slide" style="background-image:url(./Img/number9-store-dali.jpg)"></div>
-            <div class="swiper-slide" style="background-image:url(./Img/)"></div>
-            <div class="swiper-slide" style="background-image:url(./images/nature-4.jpg)"></div>
-            <div class="swiper-slide" style="background-image:url(./images/nature-5.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(./Img/swiper_heineken.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(./Img/swiper_taiwanbear.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(./Img/swiper_bear.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(./Img/swiper_taiwanbear1.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(./Img/swiper_taiwanbear2.jpg)"></div>
+
         </div>
         <!-- Add Pagination -->
         <div class="swiper-pagination swiper-pagination-white"></div>
@@ -270,8 +271,11 @@
         //  < !--slide_ad廣告 -->
         var swiper = new Swiper('.swiper-container', {
             spaceBetween: 30,
-            effect: 'fade',
-            
+            centeredSlides: true,
+            autoplay: {
+                delay: 1500,
+                disableOnInteraction: false,
+            },
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
