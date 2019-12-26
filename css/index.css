@@ -31,6 +31,12 @@ body {
   background-color: gray;
 }
 
+@media (max-width: 470px) {
+  .banner .banner_image {
+    height: 100vh;
+  }
+}
+
 #menu_list {
   margin: 20px 0;
 }
@@ -69,7 +75,7 @@ body {
 
 .swiper-container {
   width: 100%;
-  height: 100%;
+  height: 200px;
 }
 
 .swiper-container .swiper-slide {
@@ -91,6 +97,6 @@ body {
 }
 
 #store_list .store_all .store_info .store_page .card {
-  margin: 30px;
+  margin: 10px auto;
 }
 /*# sourceMappingURL=index.css.map */
