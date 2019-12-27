@@ -309,6 +309,12 @@
         <!-- 結尾資訊 -->
     </div>
 
+    <!-- 彈跳視窗 -->
+ <section id="pop_menu_text">
+
+ </section>
+<!-- 彈跳視窗尾端 -->
+
 
     <!-- bootstrap js -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -344,9 +350,11 @@
         });
 
         $(function () {
+            // 宣告navmain = navbar-collapse
             var navMain = $(".navbar-collapse");
-            // 按鍵事件 點選後自動縮放選單
+            // 按鍵事件 點選on click 自動縮放選單
             navMain.on("click", "a:not([data-toggle])", null, function () {
+                // 隱藏彈跳視窗
                 navMain.collapse('hide');
             });
         });
