@@ -99,12 +99,18 @@ body {
 
 .all .swiper-container .swiper-slide {
   background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-size: contain;
+  background-repeat: repeat;
+}
+
+@media (max-width: 760px) {
+  .all .swiper-container .swiper-slide {
+    background-size: cover;
+  }
 }
 
 .all #store_list {
-  background-color: red;
+  background-color: #655445;
 }
 
 .all #store_list .store_info {
@@ -134,7 +140,7 @@ body {
 
 .all #about_us {
   padding: 20px 0;
-  background-color: #00d9ff;
+  background-color: #9d605e;
   color: white;
   text-align: center;
   height: 500px;
