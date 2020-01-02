@@ -56,6 +56,46 @@ body {
   background-image: url("../Img/menu_cool.png");
 }
 
+.all #menu_list .mid_menu_all .mid_menu :nth-child(3) .menu_icon {
+  background-image: url("../Img/menu_cool.png");
+}
+
+.all #menu_list .mid_menu_all .mid_menu :nth-child(4) .menu_icon {
+  background-image: url("../Img/menu_cool.png");
+}
+
+.all #menu_list .mid_menu_all .mid_menu :nth-child(5) .menu_icon {
+  background-image: url("../Img/menu_cool.png");
+}
+
+.all #menu_list .mid_menu_all .mid_menu :nth-child(6) .menu_icon {
+  background-image: url("../Img/menu_cool.png");
+}
+
+.all #menu_list .mid_menu_all .mid_menu :nth-child(7) .menu_icon {
+  background-image: url("../Img/menu_cool.png");
+}
+
+.all #menu_list .mid_menu_all .mid_menu :nth-child(8) .menu_icon {
+  background-image: url("../Img/menu_cool.png");
+}
+
+.all #menu_list .mid_menu_all .mid_menu :nth-child(9) .menu_icon {
+  background-image: url("../Img/menu_cool.png");
+}
+
+.all #menu_list .mid_menu_all .mid_menu :nth-child(10) .menu_icon {
+  background-image: url("../Img/menu_cool.png");
+}
+
+.all #menu_list .mid_menu_all .mid_menu :nth-child(11) .menu_icon {
+  background-image: url("../Img/menu_cool.png");
+}
+
+.all #menu_list .mid_menu_all .mid_menu :nth-child(12) .menu_icon {
+  background-image: url("../Img/menu_cool.png");
+}
+
 .all #menu_list .mid_menu_all .mid_menu .menu_flex {
   display: -webkit-box;
   display: -ms-flexbox;
