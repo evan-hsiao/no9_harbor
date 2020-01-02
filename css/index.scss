@@ -53,6 +53,13 @@ body {
 
     .mid_menu_all {
       .mid_menu {
+        :nth-child(1) .menu_icon {
+          background-image: url("../Img/menu_cool.png");
+        }
+        :nth-child(2) .menu_icon {
+          background-image: url("../Img/menu_cool.png");
+        }
+
         .menu_flex {
           display: flex;
           justify-content: center;
@@ -63,20 +70,23 @@ body {
           .menu_icon {
             width: 150px;
             height: 150px;
-            background-color: gray;
+            background-color: black;
+            background-position: center;
+            background-size: cover;
             border-radius: 50%;
-            box-shadow: 0 0 10px rgb(0, 0, 0);
             margin: 10px;
-            transition: 0.8s;
+            transition: 0.5s;
 
             @media (max-width: 470px) {
               width: 80px;
               height: 80px;
             }
           }
+
           .menu_icon:hover {
-            background-color: rgb(202, 200, 200);
+            box-shadow: 0 0 10px rgb(0, 0, 0);
           }
+
           .menu_text {
             h5 {
               @media (max-width: 330px) {
