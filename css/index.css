@@ -70,7 +70,11 @@ body {
   height: 150px;
   background-color: gray;
   border-radius: 50%;
+  -webkit-box-shadow: 0 0 10px black;
+          box-shadow: 0 0 10px black;
   margin: 10px;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
 }
 
 @media (max-width: 470px) {
@@ -78,6 +82,10 @@ body {
     width: 80px;
     height: 80px;
   }
+}
+
+.all #menu_list .mid_menu_all .mid_menu .menu_flex .menu_icon:hover {
+  background-color: #cac8c8;
 }
 
 @media (max-width: 330px) {
@@ -130,6 +138,8 @@ body {
   padding: 0;
   margin: 20px auto;
   width: 300px;
+  -webkit-box-shadow: 0 0 15px #353535;
+          box-shadow: 0 0 15px #353535;
 }
 
 @media (max-width: 320px) {

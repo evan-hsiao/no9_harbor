@@ -33,7 +33,6 @@ body {
 }
 
 .all {
- 
   .banner {
     .banner_image {
       width: 100%;
@@ -66,24 +65,28 @@ body {
             height: 150px;
             background-color: gray;
             border-radius: 50%;
+            box-shadow: 0 0 10px rgb(0, 0, 0);
             margin: 10px;
+            transition: 0.8s;
 
             @media (max-width: 470px) {
               width: 80px;
               height: 80px;
             }
           }
-          .menu_text{
-            h5{
-              @media (max-width: 330px){
+          .menu_icon:hover {
+            background-color: rgb(202, 200, 200);
+          }
+          .menu_text {
+            h5 {
+              @media (max-width: 330px) {
                 font-size: 15px;
               }
             }
-            p{
-              @media (max-width: 330px){
+            p {
+              @media (max-width: 330px) {
                 font-size: 10px;
               }
-
             }
           }
         }
@@ -97,10 +100,10 @@ body {
     height: 200px;
     .swiper-slide {
       background-position: center;
-      background-size:contain ;
+      background-size: contain;
       background-repeat: repeat;
-      
-      @media (max-width: 760px){
+
+      @media (max-width: 760px) {
         background-size: cover;
       }
     }
@@ -120,10 +123,9 @@ body {
         padding: 0;
         margin: 20px auto;
         width: 300px;
-
-        @media (max-width:320px) {
+        box-shadow: 0 0 15px rgb(53, 53, 53);
+        @media (max-width: 320px) {
           width: 250px;
-          
         }
       }
     }
@@ -178,12 +180,12 @@ body {
         justify-content: center;
         flex-direction: column-reverse;
         align-items: center;
-        
+
         // 地圖
         .footer_map {
           padding: 0;
           margin: 0;
-          
+
           iframe {
             width: 200px;
             height: 200px;
@@ -191,7 +193,7 @@ body {
             @media (max-width: 760px) {
               width: 250px;
               height: 300px;
-            transform:translateX(-20px)
+              transform: translateX(-20px);
             }
           }
         }
@@ -200,7 +202,7 @@ body {
           margin: 20px;
           text-align: center;
           @media (max-width: 760px) {
-            transform:translateX(-15px)
+            transform: translateX(-15px);
           }
           .foot_icon {
             i {
@@ -239,7 +241,7 @@ body {
 
       @media (max-width: 760px) {
         transform: translateX(12px) translateY(45px);
-      } 
+      }
       a {
         color: white;
       }
