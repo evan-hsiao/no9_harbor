@@ -37,11 +37,14 @@ body {
     .banner_image {
       width: 100%;
       height: 500px;
-      background-image: url("../Img/number9-bannerimg.jpg");
+      background-image: url("../Img/number9-banner_img2.jpg");
       background-size: cover;
       background-position: center;
 
       @media (max-width: 470px) {
+        background-image: url("../Img/number9-banner_img.jpg");
+        background-size: cover;
+        background-position: center;
         height: 100vh;
       }
     }
@@ -62,33 +65,33 @@ body {
         :nth-child(3) .menu_icon {
           background-image: url("../Img/menu/menu_cow.png");
         }
-        :nth-child(4) .menu_icon {
-          background-image: url("../Img/menu_cool.png");
-        }
-        :nth-child(5) .menu_icon {
-          background-image: url("../Img/menu_cool.png");
-        }
-        :nth-child(6) .menu_icon {
-          background-image: url("../Img/menu_cool.png");
-        }
-        :nth-child(7) .menu_icon {
-          background-image: url("../Img/menu_cool.png");
-        }
-        :nth-child(8) .menu_icon {
-          background-image: url("../Img/menu_cool.png");
-        }
-        :nth-child(9) .menu_icon {
-          background-image: url("../Img/menu_cool.png");
-        }
-        :nth-child(10) .menu_icon {
-          background-image: url("../Img/menu_cool.png");
-        }
-        :nth-child(11) .menu_icon {
-          background-image: url("../Img/menu_cool.png");
-        }
-        :nth-child(12) .menu_icon {
-          background-image: url("../Img/menu_cool.png");
-        }
+        // :nth-child(4) .menu_icon {
+        //   background-image: url("../Img/menu_cool.png");
+        // }
+        // :nth-child(5) .menu_icon {
+        //   background-image: url("../Img/menu_cool.png");
+        // }
+        // :nth-child(6) .menu_icon {
+        //   background-image: url("../Img/menu_cool.png");
+        // }
+        // :nth-child(7) .menu_icon {
+        //   background-image: url("../Img/menu_cool.png");
+        // }
+        // :nth-child(8) .menu_icon {
+        //   background-image: url("../Img/menu_cool.png");
+        // }
+        // :nth-child(9) .menu_icon {
+        //   background-image: url("../Img/menu_cool.png");
+        // }
+        // :nth-child(10) .menu_icon {
+        //   background-image: url("../Img/menu_cool.png");
+        // }
+        // :nth-child(11) .menu_icon {
+        //   background-image: url("../Img/menu_cool.png");
+        // }
+        // :nth-child(12) .menu_icon {
+        //   background-image: url("../Img/menu_cool.png");
+        // }
 
         .menu_flex {
           display: flex;
@@ -108,8 +111,8 @@ body {
             transition: 0.5s;
 
             @media (max-width: 470px) {
-              width: 80px;
-              height: 80px;
+              width: 100px;
+              height: 100px;
             }
           }
 
@@ -119,13 +122,17 @@ body {
 
           .menu_text {
             h5 {
-              @media (max-width: 330px) {
-                font-size: 15px;
+              // @media (max-width: 330px) {
+              // font-size: 15px;
+              @media (max-width: 470px) {
+                display: none;
               }
             }
             p {
-              @media (max-width: 330px) {
-                font-size: 10px;
+              // @media (max-width: 330px) {
+              // font-size: 10px;
+              @media (max-width: 470px) {
+                display: none;
               }
             }
           }

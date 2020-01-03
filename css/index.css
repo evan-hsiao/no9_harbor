@@ -33,13 +33,16 @@ body {
 .all .banner .banner_image {
   width: 100%;
   height: 500px;
-  background-image: url("../Img/number9-bannerimg.jpg");
+  background-image: url("../Img/number9-banner_img2.jpg");
   background-size: cover;
   background-position: center;
 }
 
 @media (max-width: 470px) {
   .all .banner .banner_image {
+    background-image: url("../Img/number9-banner_img.jpg");
+    background-size: cover;
+    background-position: center;
     height: 100vh;
   }
 }
@@ -58,42 +61,6 @@ body {
 
 .all #menu_list .mid_menu_all .mid_menu :nth-child(3) .menu_icon {
   background-image: url("../Img/menu/menu_cow.png");
-}
-
-.all #menu_list .mid_menu_all .mid_menu :nth-child(4) .menu_icon {
-  background-image: url("../Img/menu_cool.png");
-}
-
-.all #menu_list .mid_menu_all .mid_menu :nth-child(5) .menu_icon {
-  background-image: url("../Img/menu_cool.png");
-}
-
-.all #menu_list .mid_menu_all .mid_menu :nth-child(6) .menu_icon {
-  background-image: url("../Img/menu_cool.png");
-}
-
-.all #menu_list .mid_menu_all .mid_menu :nth-child(7) .menu_icon {
-  background-image: url("../Img/menu_cool.png");
-}
-
-.all #menu_list .mid_menu_all .mid_menu :nth-child(8) .menu_icon {
-  background-image: url("../Img/menu_cool.png");
-}
-
-.all #menu_list .mid_menu_all .mid_menu :nth-child(9) .menu_icon {
-  background-image: url("../Img/menu_cool.png");
-}
-
-.all #menu_list .mid_menu_all .mid_menu :nth-child(10) .menu_icon {
-  background-image: url("../Img/menu_cool.png");
-}
-
-.all #menu_list .mid_menu_all .mid_menu :nth-child(11) .menu_icon {
-  background-image: url("../Img/menu_cool.png");
-}
-
-.all #menu_list .mid_menu_all .mid_menu :nth-child(12) .menu_icon {
-  background-image: url("../Img/menu_cool.png");
 }
 
 .all #menu_list .mid_menu_all .mid_menu .menu_flex {
@@ -127,8 +94,8 @@ body {
 
 @media (max-width: 470px) {
   .all #menu_list .mid_menu_all .mid_menu .menu_flex .menu_icon {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
   }
 }
 
@@ -137,15 +104,15 @@ body {
           box-shadow: 0 0 10px black;
 }
 
-@media (max-width: 330px) {
+@media (max-width: 470px) {
   .all #menu_list .mid_menu_all .mid_menu .menu_flex .menu_text h5 {
-    font-size: 15px;
+    display: none;
   }
 }
 
-@media (max-width: 330px) {
+@media (max-width: 470px) {
   .all #menu_list .mid_menu_all .mid_menu .menu_flex .menu_text p {
-    font-size: 10px;
+    display: none;
   }
 }
 
