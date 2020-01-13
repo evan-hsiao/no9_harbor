@@ -52,9 +52,46 @@ body {
 
   // 我們的菜單
   #menu_list {
-    margin: 20px 0;
+  padding: 20px 0;
+    background-position: center;
+      background-image: url("../img/night-bg.png");
 
-    .mid_menu_all {
+      .mid_menu_all {
+      position: relative;
+      z-index: 1;
+      // 燈光圖片
+      img {
+        position: absolute;
+        bottom: 0;
+        left: -20%;
+        height: 500px;
+        animation: light infinite linear alternate-reverse 2s;
+        transform-origin: 50% 100%;
+        z-index: -1;
+        @keyframes light {
+          from {
+            transform: rotate(10deg);
+          }
+          to {
+            transform: rotate(60deg);
+          }
+        }
+        @media (max-width: 1050px) {
+          left: 5%;
+        }
+        @media (max-width: 500px) {
+          height: 200px;
+          left: 20%;
+          @keyframes light {
+            from {
+              transform: rotate(-20deg);
+            }
+            to {
+              transform: rotate(20deg);
+            }
+          }
+        }
+      }
       .mid_menu {
         :nth-child(1) .menu_icon {
           background-image: url("../Img/menu/menu_cool.png");
@@ -65,33 +102,33 @@ body {
         :nth-child(3) .menu_icon {
           background-image: url("../Img/menu/menu_cow.png");
         }
-        // :nth-child(4) .menu_icon {
-        //   background-image: url("../Img/menu_cool.png");
-        // }
-        // :nth-child(5) .menu_icon {
-        //   background-image: url("../Img/menu_cool.png");
-        // }
-        // :nth-child(6) .menu_icon {
-        //   background-image: url("../Img/menu_cool.png");
-        // }
-        // :nth-child(7) .menu_icon {
-        //   background-image: url("../Img/menu_cool.png");
-        // }
-        // :nth-child(8) .menu_icon {
-        //   background-image: url("../Img/menu_cool.png");
-        // }
-        // :nth-child(9) .menu_icon {
-        //   background-image: url("../Img/menu_cool.png");
-        // }
-        // :nth-child(10) .menu_icon {
-        //   background-image: url("../Img/menu_cool.png");
-        // }
-        // :nth-child(11) .menu_icon {
-        //   background-image: url("../Img/menu_cool.png");
-        // }
-        // :nth-child(12) .menu_icon {
-        //   background-image: url("../Img/menu_cool.png");
-        // }
+        :nth-child(4) .menu_icon {
+          background-image: url("../img/menu/menu_shrimp.png");
+        }
+        :nth-child(5) .menu_icon {
+          background-image: url("../img/menu/menu_fish.png");
+        }
+        :nth-child(6) .menu_icon {
+          background-image: url("../Img/menu/menu_seafood.png");
+        }
+        :nth-child(7) .menu_icon {
+          background-image: url("../Img/menu/menu_dofu.png");
+        }
+        :nth-child(8) .menu_icon {
+          background-image: url("../Img/menu/menu_pig.png");
+        }
+        :nth-child(9) .menu_icon {
+          background-image: url("../Img/menu/menu_vegetables.png");
+        }
+        :nth-child(10) .menu_icon {
+          background-image: url("../Img/menu/menu_soup.png");
+        }
+        :nth-child(11) .menu_icon {
+          background-image: url("../Img/menu/menu_newfoods.png");
+        }
+        :nth-child(12) .menu_icon {
+          background-image: url("../Img/menu/menu_newsoup.png");
+        }
 
         .menu_flex {
           display: flex;

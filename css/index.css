@@ -48,7 +48,80 @@ body {
 }
 
 .all #menu_list {
-  margin: 20px 0;
+  padding: 20px 0;
+  background-position: center;
+  background-image: url("../img/night-bg.png");
+}
+
+.all #menu_list .mid_menu_all {
+  position: relative;
+  z-index: 1;
+}
+
+.all #menu_list .mid_menu_all img {
+  position: absolute;
+  bottom: 0;
+  left: -20%;
+  height: 500px;
+  animation: light infinite linear alternate-reverse 2s;
+  -webkit-transform-origin: 50% 100%;
+          transform-origin: 50% 100%;
+  z-index: -1;
+}
+
+@-webkit-keyframes light {
+  from {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  to {
+    -webkit-transform: rotate(60deg);
+            transform: rotate(60deg);
+  }
+}
+
+@keyframes light {
+  from {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  to {
+    -webkit-transform: rotate(60deg);
+            transform: rotate(60deg);
+  }
+}
+
+@media (max-width: 1050px) {
+  .all #menu_list .mid_menu_all img {
+    left: 5%;
+  }
+}
+
+@media (max-width: 500px) {
+  .all #menu_list .mid_menu_all img {
+    height: 200px;
+    left: 20%;
+  }
+  @-webkit-keyframes light {
+    from {
+      -webkit-transform: rotate(-20deg);
+              transform: rotate(-20deg);
+    }
+    to {
+      -webkit-transform: rotate(20deg);
+              transform: rotate(20deg);
+    }
+  }
+  @keyframes light {
+    from {
+      -webkit-transform: rotate(-20deg);
+              transform: rotate(-20deg);
+    }
+    to {
+      -webkit-transform: rotate(20deg);
+              transform: rotate(20deg);
+    }
+  }
 }
 
 .all #menu_list .mid_menu_all .mid_menu :nth-child(1) .menu_icon {
@@ -61,6 +134,42 @@ body {
 
 .all #menu_list .mid_menu_all .mid_menu :nth-child(3) .menu_icon {
   background-image: url("../Img/menu/menu_cow.png");
+}
+
+.all #menu_list .mid_menu_all .mid_menu :nth-child(4) .menu_icon {
+  background-image: url("../img/menu/menu_shrimp.png");
+}
+
+.all #menu_list .mid_menu_all .mid_menu :nth-child(5) .menu_icon {
+  background-image: url("../img/menu/menu_fish.png");
+}
+
+.all #menu_list .mid_menu_all .mid_menu :nth-child(6) .menu_icon {
+  background-image: url("../Img/menu/menu_seafood.png");
+}
+
+.all #menu_list .mid_menu_all .mid_menu :nth-child(7) .menu_icon {
+  background-image: url("../Img/menu/menu_dofu.png");
+}
+
+.all #menu_list .mid_menu_all .mid_menu :nth-child(8) .menu_icon {
+  background-image: url("../Img/menu/menu_pig.png");
+}
+
+.all #menu_list .mid_menu_all .mid_menu :nth-child(9) .menu_icon {
+  background-image: url("../Img/menu/menu_vegetables.png");
+}
+
+.all #menu_list .mid_menu_all .mid_menu :nth-child(10) .menu_icon {
+  background-image: url("../Img/menu/menu_soup.png");
+}
+
+.all #menu_list .mid_menu_all .mid_menu :nth-child(11) .menu_icon {
+  background-image: url("../Img/menu/menu_newfoods.png");
+}
+
+.all #menu_list .mid_menu_all .mid_menu :nth-child(12) .menu_icon {
+  background-image: url("../Img/menu/menu_newsoup.png");
 }
 
 .all #menu_list .mid_menu_all .mid_menu .menu_flex {
