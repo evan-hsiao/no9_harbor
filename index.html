@@ -173,7 +173,7 @@
                 </div>
                 <!-- 探照燈 -->
                 <img src="./Img/light.png" alt="">
-                
+
             </div>
         </section>
         <!-- section1我的菜單尾端 -->
@@ -376,6 +376,33 @@
             }
             prevScrollpos = currentScrollPos;
         }
+
+        // 點擊區域放大內容
+        var divOclick = document.querySelector('.image');
+        var divBlock = document.querySelector('.overlay');
+        var shadeBlock = document.querySelector('.shade');
+        var divShutdown = divBlock.querySelector('.shutdown');
+        
+        divOclick.onclick = function () {
+            if (divBlock.classList.contains('this_block') == false) {
+                shadeBlock.style.display = 'block';
+                divBlock.classList.add('this_block');
+            } else {
+                divBlock.classList.remove('this_block');
+                shadeBlock.style.display = 'none';
+            }
+        }
+        // 點到遮色關閉內容
+        shadeBlock.onclick = function () {
+            divBlock.classList.remove('this_block');
+            shadeBlock.style.display = 'none';
+        }
+        // 點關閉紐..關閉內容
+        divShutdown.onclick = function () {
+            divBlock.classList.remove('this_block');
+            shadeBlock.style.display = 'none';
+        }
+
 
     </script>
 </body>
