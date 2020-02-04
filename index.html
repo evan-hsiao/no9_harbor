@@ -19,7 +19,72 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
 </head>
 <style>
+    /* 彈跳區塊 */
+    .overlay {
+        width: 50%;
+        height: 50vh;
+        background-color: white;
+        position: absolute;
+        left: calc(50% - 25%);
+        top: calc(50vh - 25vh);
+        z-index: 2;
+        transform: scale(0);
+        transition: 0.3s ease;
+    }
 
+    .this_block {
+        transform: scale(1);
+    }
+
+    /* 關閉按鈕 */
+    .shutdown {
+        width: 30px;
+        height: 30px;
+        border-radius: 15%;
+        border: 1px solid black;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+    }
+
+    /* 關閉按鈕-內線 */
+    .link {
+        width: 80%;
+        height: 3px;
+        background-color: red;
+        border-radius: 40%;
+        left: 10%;
+        top: 48%;
+        position: absolute;
+        transform: rotate(45deg);
+    }
+
+    .link:nth-child(2) {
+        transform: rotate(-45deg);
+    }
+
+    /* 彈跳內容區 */
+    .text {
+        color:black;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    /* 全屏遮色 */
+    .shade {
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+        z-index: 1;
+    }
 </style>
 
 <body>
@@ -317,7 +382,14 @@
 
     <!-- 彈跳視窗 -->
     <section id="pop_menu_text">
-
+        <div class="overlay">
+            <div class="shutdown">
+                <div class="link"></div>
+                <div class="link"></div>
+            </div>
+            <div class="text">這是菜單類別明細</div>
+        </div>
+        <div class="shade"></div>
     </section>
     <!-- 彈跳視窗尾端 -->
 
@@ -378,11 +450,11 @@
         }
 
         // 點擊區域放大內容
-        var divOclick = document.querySelector('.image');
+        var divOclick = document.querySelector('.menu_icon');
         var divBlock = document.querySelector('.overlay');
         var shadeBlock = document.querySelector('.shade');
         var divShutdown = divBlock.querySelector('.shutdown');
-        
+
         divOclick.onclick = function () {
             if (divBlock.classList.contains('this_block') == false) {
                 shadeBlock.style.display = 'block';
